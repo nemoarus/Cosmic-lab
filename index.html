@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CosmicLab DESY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <header class="townboy-header">
+    <a class="überschrift" href="DESY.DE">
+      <h1>Cosmic Lab</h1>
+    </a>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <video class="hero-bg" id="bg-video" autoplay muted loop playsinline>
+      <source src="stars.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content animate__animated animate__fadeIn">
+      <h2>Willkommen im CosmicLab!</h2>
+      <p> Auf dieser Seite finden Sie eine Übersicht darüber,
+        woran Praktikanten wie <a style=" color:white" id="openPopup" href="#">Yahia Kamourji</a> am DESY arbeiten.
+      </p>
+    </div>
+  </section>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+
+      <h2>Yahia Kamourji,</h2>
+      <p style="margin-bottom: 20px;">
+        ist ein Praktikant im CosmicLab am DESY Zeuthen. Er hat wahrend seines Praktikums an das CosMO Experiment
+        gearbeitet und die Ergenisse ausgewertet. Auf dieser Seite finden Sie eine Ubersicht uber seine Arbeit und die
+        Ergebnisse, die er wahrend seines Praktikums erzielt hat.
+      </p>
+      <img style="width: 100%; height: auto;" src="img_1135.jpg">
+
+    </div>
+  </div>
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>Über DESY COSMIC LAB</h2>
+      <p id="WASLOS">
+        Im Cosmiclab gibt es die Möglichkeit, mit modernen Mess- und Analysemethoden wissenschaftlich zu arbeiten. Durch
+        die unmittelbare Zusammenarbeit mit Wissenschaftler:innen am Institut gibt es die Gelegenheit, sich mit
+        aktuellen wissenschaftlichen Fragestellungen zu beschäftigen und gleichzeitig den Forscheralltag in allen
+        Facetten zu erleben.
+      </p>
+      <img src="img_1232.jpg" alt="COSMIC LAB" class="about-image" />
+    </div>
+  </section>
+
+  <section id="locations" class="locations-section">
+    <h2>Kooperationsprojekte</h2>
+    <div class="location">
+      <h3>Das IceCube Experiment</h3>
+      <p>
+        Das IceCube-Neutrinoobservatorium ist der größte Neutrinodetektor der Welt und befindet sich tief im Eis der
+        Antarktis. Seine Aufgabe besteht darin, hochenergetische Neutrinos aus dem Weltall nachzuweisen. Diese nahezu
+        masselosen Teilchen können große Entfernungen nahezu ungehindert zurücklegen und liefern wertvolle Informationen
+        über extreme Ereignisse wie Supernovae, Schwarze Löcher oder aktive Galaxien. Der Detektor besteht aus mehr als
+        5.000 Lichtsensoren, die in einer Tiefe von bis zu 2,5 Kilometern im Eis installiert sind. Trifft ein Neutrino
+        auf ein Teilchen im Eis, entsteht Cherenkov-Licht, das von den Sensoren erfasst wird. Aus diesen Messungen
+        können
+        die Richtung und Energie des Neutrinos bestimmt werden. Am DESY in Zeuthen wurden zahlreiche Detektormodule
+        entwickelt und gebaut. Darüber hinaus beteiligt sich DESY an der Weiterentwicklung des Observatoriums, der
+        Datenanalyse sowie am Ausbau zum IceCube-Gen2-Detektor. <a style="color:black;"
+          href="https://icecube.wisc.edu/">Hier mehr!</a>
+
+      </p>
+      <img src="Werthebach_20180525-JW7_7142_web.jpg" alt="Doppeldeckerbuss" class="location-image" />
+    </div>
+    <div class="location">
+      <h3>Das CTAO Experiment</h3>
+      <p>
+        Das Cherenkov Telescope Array Observatory (CTAO) ist eines der weltweit größten Projekte zur Erforschung
+        hochenergetischer Gammastrahlung aus dem Weltall. Ziel des Observatoriums ist es, extreme astrophysikalische
+        Ereignisse wie Supernovae, Schwarze Löcher, Pulsare und aktive Galaxien besser zu untersuchen.
+        Da Gammastrahlung die Erdoberfläche nicht direkt erreicht, erfolgt der Nachweis indirekt. Trifft ein Gammaquant
+        auf die Erdatmosphäre, entsteht ein Teilchenschauer, der schwaches blaues Cherenkov-Licht erzeugt. Dieses Licht
+        wird von den Teleskopen des CTAO erfasst und ausgewertet. Das Science Data Management Centre befindet sich in
+        einem Gebäude auf dem Campus des Deutschen Elektronen-Synchrotrons (DESY) in Zeuthen. <a
+          href="https://www.ctao.org/de/" style="color:black;">Hier mehr!</a>
+
+      </p>
+      <img src="img_1233.jpg" alt="Café Laden" class="location-image" />
+    </div>
+  </section>
+
+  <section id="locations" class="locations-section">
+    <h2>Das CosMO Experiment</h2>
+    <div class="location">
+      <h3>Das CosMO Experiment</h3>
+      <p style="text-align: justify;">
+        Das CosMO-Experiment ist eine modernere und kompaktere Weiterentwicklung des Szintillationszähler-Experiments
+        aus dem Cosmic Ray e-Lab des QuarkNet-Projekts von Fermilab in den USA. Das wichtigste Bauteil sind die
+        Szintillatoren. Wenn Myonen aus der kosmischen Strahlung durch sie hindurchfliegen, erzeugen sie kurze
+        Lichtblitze. Diese Lichtsignale werden von einem sehr empfindlichen Silizium-Photomultiplier (SiPM) erfasst, der
+        einzelne Lichtteilchen erkennen kann. Das entstehende elektrische Signal wird anschließend an eine DAQ-Karte zur
+        Datenerfassung weitergeleitet. Dort werden die Signale nach den festgelegten Einstellungen ausgewertet und
+        gefiltert. Danach werden die relevanten Messdaten an ein Notebook übertragen und dort gespeichert. Auf dem
+        unteren Bild ist der Aufbau des CosMO-Experiments dargestellt. Weitere Informationen zum Aufbau sowie zu den
+        Messergebnissen finden Sie weiter unten.
+      </p>
+      <h3 style="margin-top: 20px; ">Aufbau</h3>
+      <p style="text-align: justify;"> Das Cosmic Muon Observer (CosMO) besteht aus drei Detektorboxen, einer Data
+        Acquisition (DAQ)-Karte sowie
+        einem Netbook zur Steuerung des Experiments. Das Netbook dient außerdem zur Speicherung und Auswertung der
+        Messdaten. Hierfür wird das Programm Muonic verwendet, das über das Terminal gestartet werden kann. Optional
+        kann zusätzlich ein GPS-Gerät an die DAQ-Karte angeschlossen werden, um die Messungen zeitlich präzise zu
+        synchronisieren. Die drei Detektorboxen (siehe Abbildung unten) bestehen jeweils aus einem lichtdicht
+        verpackten Szintillator, einem Silizium-Photomultiplier (2) mit zugehöriger Hochspannungsversorgung (3),
+        der Spannungsregelung (4), dem Anschluss für die Spannungsversorgung (5) sowie dem Signalausgang (7).
+        Gemeinsam ermöglichen diese Komponenten die Erfassung und Weiterleitung der durch kosmische Myonen erzeugten
+        Lichtsignale. </p>
+      <div class="image-row">
+        <img src="IMG_1150.jpeg" alt="Doppeldeckerbuss" class="location-image" />
+        <img src="KomponentenCosMO.jpeg" alt="Aufbau des CosMO-Experiments" class="menu-image" />
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>CosMO Experiment Übersicht</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Messergebnissen</h3>
+        <p style="text-align: justify;">Mit den Detektoren und der vielseitig einsetzbaren DAQ-Karte können verschiedene
+          Experimente zur Untersuchung
+          kosmischer Teilchen durchgeführt werden. Dazu gehören unter anderem die Messung der Teilchenrate bei
+          unterschiedlichen Abständen und Winkeln der Detektoren sowie mit verschiedenen Koinzidenzeinstellungen.
+          Außerdem lassen sich Teilchenschauer untersuchen, indem der horizontale Abstand der Detektoren verändert wird.
+          Darüber hinaus kann die Geschwindigkeit von Myonen bestimmt werden. Ein weiteres Experiment ermöglicht die
+          Messung der mittleren Lebensdauer eines Myons. Dabei werden Ereignisse ausgewertet, bei denen innerhalb von 20
+          Mikrosekunden zwei Signale in derselben Detektorplatte registriert werden. Das erste Signal stammt von einem
+          einfallenden Myon, das zweite von dessen Zerfallsprodukt, einem Elektron oder Positron. Aus der zeitlichen
+          Verteilung dieser Ereignisse lässt sich die mittlere Lebensdauer des Myons bestimmen. Unten finden Sie
+          auswertung von einige Messungen die durchgeführt wurden.</p>
+        <img src="CosMO Muehle Diagramm.png" alt="Backwaren" class="menu-image" style="margin-bottom: 20px;" />
+
+        <p style=" text-align: justify;">Hier finden Sie das ausgewertete Diagramm der
+          Messungen zur Myonenraten in
+          Abhängigkeit von der Zeit. Wobei
+          die X-Achse die Zeit zwischen dem 10.01.2021 und dem 29.07.2021 darstellt und die Y-Achse die Anzahl der
+          Ereignisse.</p>
+
+        <img src="Bild 1.png" alt="Backwaren" class="menu-image" />
+
+        <p style="margin-top: 20px;">Hier finden Sie auch das ausgewertete Diagramm der Messungen zur Myonenraten in
+          Abhängigkeit von der Zeit. Wie oben wobei hier eine dritte Achse zu sehen ist, dass die Abhängigkeit von der
+          Temperatur darstellt.</p>
+
+        <img src="COsMO Muehlen.png" alt="Backwaren" class="menu-image" />
+
+        <p style="margin-top: 20px;">Oben finden Sie das ausgewertete Diagramm der Messungen zur Myonenraten in
+          Abhängigkeit von Winkel. Wobei
+          die X-Achse den Winkel darstellt und die Y-Achse die Anzahl der
+          Ereignisse. Zusätzlich ist eine dritte Achse zu sehen, dass die Abhängigkeit zur Zeit darstellt</p>
+      </div>
+
+      <button id="openAnalysis" class="analysis-btn">Auswertung</button>
+
+      <div id="analysisPopup" class="popup">
+        <div class="popup-content analysis-content">
+          <span class="close-analysis">&times;</span>
+
+          <h2>Auswertung des CosMO-Experiments</h2>
+
+          <p style="text-align: justify;">
+            Im Rahmen des CosMO-Experiments wurden verschiedene Messreihen zur Untersuchung der kosmischen Myonen
+            durchgeführt. Die aufgenommenen Daten wurden mit der Software <b>Muonic</b> ausgewertet und anschließend
+            grafisch dargestellt. Ziel der Auswertung war es, den Einfluss verschiedener Parameter auf die gemessene
+            Myonenrate zu untersuchen und die Ergebnisse mit den theoretischen Erwartungen zu vergleichen.
+          </p>
+
+          <p style="text-align: justify;">
+            Die erste Messreihe zeigt die Anzahl der registrierten Myonen in Abhängigkeit von der Zeit. Obwohl die
+            Messwerte natürlichen statistischen Schwankungen unterliegen, bleibt die mittlere Myonenrate über den
+            gesamten Messzeitraum nahezu konstant. Dies bestätigt, dass kosmische Strahlung die Erdoberfläche
+            kontinuierlich erreicht und sich ihre Intensität über längere Zeiträume nur gering verändert.
+          </p>
+
+          <p style="text-align: justify;">
+            In der zweiten Auswertung wurde zusätzlich die Temperatur berücksichtigt. Dabei lässt sich erkennen, dass
+            sich die Myonenrate mit der Temperatur leicht verändert. Ursache hierfür sind Veränderungen in der
+            Erdatmosphäre, welche die Entstehung und den Zerfall der Myonen beeinflussen können.
+          </p>
+
+          <p style="text-align: justify;">
+            Die dritte Messreihe untersucht die Abhängigkeit der Myonenrate vom Einfallswinkel. Es zeigt sich, dass bei
+            kleinen Winkeln zur Vertikalen die höchste Teilchenrate gemessen wird. Mit zunehmendem Winkel nimmt die
+            Anzahl der registrierten Myonen ab, da schräg einfallende Myonen einen längeren Weg durch die Atmosphäre
+            zurücklegen und daher häufiger zerfallen.
+          </p>
+
+          <p style="text-align: justify;">
+            Insgesamt stimmen die Messergebnisse gut mit den theoretischen Erwartungen überein. Das CosMO-Experiment
+            eignet sich daher hervorragend, um die Eigenschaften kosmischer Strahlung zu untersuchen und die
+            Funktionsweise moderner Teilchendetektoren kennenzulernen.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>Seminare am DESY</h2>
+      <p id="WASLOS">
+        Am DESY finden woechentliche Seminare statt, in denen Wissenschaftler:innen ihre aktuellen Forschungsergebnisse
+        vorstellen. Diese Seminare bieten Praktikant:innen die Moeglichkeit, sich mit den neuesten Entwicklungen in der
+        Teilchenphysik und Astrophysik vertraut zu machen und von den Erfahrungen der Forscher:innen zu lernen.
+      </p>
+      <img src="img_1232.jpg" alt="COSMIC LAB" class="about-image" />
+    </div>
+  </section>
+
+  <div class="paralell">
+    <section id="contact" class="contact-section">
+      <h2>Folge Uns!</h2>
+      <div class="contact-content">
+        <p style="text-align: center;">
+          Folge uns auf unsere Social Media Accounts um nichts zu verpassen!
+        </p>
+
+        <ul class="wrapper">
+          <li class="icon twitter">
+            <a style="color: black;" href="http://de.linkedin.com/company/desy">
+              <span class="tooltip">LinkedIn</span>
+              <svg height="1.8em" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                class="twitter">
+                <path d="M42,37V27.5c0-5.2-1.1-9.2-7.2-9.2c-2.9,0-4.8,1.6-5.6,3.1h-0.1V18h-6.8V37h7V28.1c0-2.4,0.5-4.7,3.4-4.7s3,2.8,3,4.9V37H42z
+                M6.5,13.6c2.3,0,3.8-1.5,3.8-3.4S8.8,6.7,6.7,6.7S3,8.2,3,10.1S4.3,13.6,6.5,13.6z M10,37V18H3v19H10z">
+                </path>
+              </svg></a>
+          </li>
+          <li class="icon instagram">
+            <a style="color: black;"
+              href="https://www.instagram.com/follow.desy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <span class="tooltip">Instagram</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                </path>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Kontakt</h2>
+      <div class="contact-content">
+        <p style="text-align: center;">
+          Hast du Fragen? Kontaktiere uns gerne unter
+          <strong>carolin.gnebner@desy.de</strong>
+        </p>
+        <img src="1.jpg" alt="Kontakt" class="contact-image" />
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>© 2026 Yahia Kamourji. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
