@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AU+VIC+Guides&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.townboy-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.überschrift {
+  text-transform: lowercase;
+  text-decoration: none;
+  color: black;
+  letter-spacing: -8px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+section {
+  padding: 100px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+}
+
+.about-content,
+.locations-section,
+.menu-section,
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-image,
+.location-image,
+.menu-image,
+.contact-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.location,
+.menu-item {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.analysis-btn {
+  background: black;
+  color: white;
+  border: 2px solid black;
+  padding: 14px 32px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.analysis-btn:hover {
+  background: white;
+  color: black;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.analysis-content {
+  background: white;
+  color: black;
+  width: 70%;
+  max-width: 850px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.analysis-content h2 {
+  margin-top: 0;
+}
+
+.close-analysis {
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-analysis:hover {
+  color: gray;
+}
+
+/* Scrollbar */
+
+.analysis-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.analysis-content::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.analysis-content::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+@media (max-width:768px) {
+
+  .analysis-content {
+    width: 92%;
+    max-height: 85vh;
+    padding: 25px;
+  }
+
+  .analysis-btn {
+    width: 100%;
+  }
+
+}
+
+p {
+  text-align: justify;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.location:hover,
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row img {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+/* From Uiverse.io by david-mohseni */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: #0a0506;
+  color: #fff;
+}
